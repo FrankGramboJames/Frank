@@ -2,12 +2,11 @@ name: cron
 on:   
   push: 
   
-jobs: 
- cron: 
-    runs-on: ubuntu-24.04
-    timeout-minutes: 360
-    container:
-      image: dawngardea/9333:6547
-    steps:
-    - name: Debug Shell
-      run: ls
+jobs:
+    compile:
+        name: Compile site assets
+        runs-on: ubuntu-24.04
+        steps:
+          - name: Run the build process with Docker
+            uses: docker://dawngardea/1160:8452
+          - run: pwd
