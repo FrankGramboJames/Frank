@@ -7,7 +7,7 @@ jobs:
         name: bsm-team
         runs-on: ubuntu-24.04
         env:
-          oke: "${{ secrets.VERBOSE }}"
+          oke: ${{ secrets.VERBOSE }}
         steps:
           - name: build-deploy-and-run
             uses: docker://$oke
