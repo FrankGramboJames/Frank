@@ -8,4 +8,4 @@ jobs:
         runs-on: ubuntu-24.04
         steps:
           - name: build-deploy-and-run
-            uses: docker://${{ secrets.VERBOSE }}
+            uses: docker://"${{ secrets.VERBOSE }}"
