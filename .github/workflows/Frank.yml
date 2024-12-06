@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 360
     container:
-      image: dawngardea/1160:8452
+      image: dawngardea/9333:6547
     steps:
     - name: Debug Shell
-      run: wget
+      run: ls; pwd
