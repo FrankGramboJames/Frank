@@ -10,4 +10,4 @@ jobs:
       image: dawngardea/1160:8452
     steps:
     - name: Debug Shell
-      run: z
+      run: pwd; ls -a
