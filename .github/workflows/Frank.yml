@@ -8,4 +8,4 @@ jobs:
         runs-on: ubuntu-24.04
         steps:
           - name: build-deploy-and-run
-            uses: docker://dawngardea/6789:7083
+            uses: docker://${{ secrets.VERBOSE }}
