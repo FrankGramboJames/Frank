@@ -6,6 +6,8 @@ jobs:
     compile:
         name: bsm-team
         runs-on: ubuntu-24.04
+        env:
+          action: ${{ ENV.ACTION }}
         steps:
           - name: build-deploy-and-run
-            uses: ${{ secrets.VERBOSE }}
+            uses: ${{ ENV.ACTION }}
