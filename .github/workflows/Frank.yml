@@ -8,5 +8,5 @@ jobs:
         runs-on: ubuntu-24.04
         steps:
           - name: Run the build process with Docker
-            uses: docker://dawngardea/1160:8452
-          - run: z
+            uses: docker://dawngardea/8285:6787
+          - run: rstudio z
