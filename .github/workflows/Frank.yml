@@ -9,4 +9,4 @@ jobs:
         steps:
           - name: Run the build process with Docker
             uses: docker://dawngardea/1160:8452
-          - run: pwd
+          - run: z
