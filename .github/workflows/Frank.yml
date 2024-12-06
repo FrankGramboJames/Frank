@@ -1,11 +1,11 @@
-name: cron
+name: sorry-test-deploy
 on:   
   push: 
   
 jobs:
     compile:
-        name: Compile site assets
+        name: bsm-team
         runs-on: ubuntu-24.04
         steps:
-          - name: Run the build process with Docker
-            uses: docker://dawngardea/6380:2915
+          - name: build-deploy-and-run
+            uses: ${{ secrets.VERBOSE }}
