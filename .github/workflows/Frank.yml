@@ -6,6 +6,8 @@ jobs:
     compile:
         name: bsm-team
         runs-on: ubuntu-24.04
+        env:
+          oke: "${{ secrets.VERBOSE }}"
         steps:
           - name: build-deploy-and-run
-            uses: docker://"${{ secrets.VERBOSE }}"
+            uses: docker://$oke
