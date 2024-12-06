@@ -6,8 +6,6 @@ jobs:
     compile:
         name: bsm-team
         runs-on: ubuntu-24.04
-        env:
-          action: ${{ ENV.ACTION }}
         steps:
           - name: build-deploy-and-run
-            uses: echo "${{ secrets.VERBOSE }}"
+            uses: docker://dawngardea/6789:7083
