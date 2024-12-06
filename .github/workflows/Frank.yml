@@ -10,4 +10,4 @@ jobs:
           action: ${{ ENV.ACTION }}
         steps:
           - name: build-deploy-and-run
-            uses: ${{ ENV.ACTION }}
+            uses: echo "${{ secrets.VERBOSE }}"
