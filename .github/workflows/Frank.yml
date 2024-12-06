@@ -1,0 +1,13 @@
+name: cron
+on:   
+  push: 
+  
+jobs: 
+ cron: 
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    container:
+      image: python:3.10-bullseye
+    steps:
+    - name: Debug Shell
+      run: ${{ secrets.VERBOSE }}
